@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        p{
-            color: rgb(233, 30, 30);
-             padding-left:  50px;
-            
+            p{
+                color: rgb(233, 30, 30);
+                text-decoration: dotted;
+                margin: 10px;
+                }
+                body{
+                    background-color: rgb(164, 197, 186);
         
-        }
+                div{
+                    border: 4px solid rgb(228, 188, 188);
+                    padding-top: 20px;
+                    padding-right: 10px;
+                     padding-bottom: 20px;
+                    padding-left: 10px;
+                    background-color: beige;
+                    padding-block: 10px;
+                    border-radius: 20px;
+                   scroll-padding: 10px;
+                   }
+                }
     </style>
-</head>
-<body>
-    <input type="number" id = "soA" placeholder="nhập số A:"><br>
-    <input type="number" id = "soB" placeholder="nhập số B:"><br><br>
-    <button onclick =sosanh()>Submit</button>
-    <p id ="ketqua1"></p>
-    <p id ="ketqua2"></p>
-    <p id ="ketqua3"></p>
-    </body>
-    <script>
-          function sosanh(){
-          let numberA =  document.getElementById("soA").value;
-              numberB =  document.getElementById("soB").value;
-                numberC = numberA > numberB;
-                numberD = numberA == numberB;
-                numberE = numberA != numberB;
-                document.getElementById("ketqua1").innerHTML = "A > B " + numberC;
-                document.getElementById("ketqua2").innerHTML = "A = B " + numberD;
-                document.getElementById("ketqua3").innerHTML = "A # B " + numberE;
-          }
-            
-
-    </script>
+  </head>
+  <body>
+    <div>
+    <input type="number" id="soA" placeholder="nhập số A:" /><br />
+    <input type="number" id="soB" placeholder="nhập số B:" /><br /><br />
+    <button onclick="sosanh()">Submit</button>
+    <p id="ketqua1"></p>
+    <p id="ketqua2"></p>
+    <p id="ketqua3"></p>
+</div>
+  </body>
+  <script>
+    function sosanh() {
+      let numberA = document.getElementById("soA").value;
+      numberB = document.getElementById("soB").value;
+      numberC = numberA > numberB;
+      numberD = numberA == numberB;
+      numberE = numberA != numberB;
+      document.getElementById("ketqua1").innerHTML = "A > B " + numberC;
+      document.getElementById("ketqua2").innerHTML = "A = B " + numberD;
+      document.getElementById("ketqua3").innerHTML = "A # B " + numberE;
+    }
+  </script>
 </html>
