@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            margin: 400px;
+            background-color: blanchedalmond;
+           font-style: oblique;
+                       }
+            
+        
+    </style>
+</head>
+<body>
+   <h1> Điền Tên Của Bạn</h1>
+    <input type=" text" id="yourname" placeholder="Họ và Tên">
+    <button onclick="showname()">Xác nhận</button>
+    <h1 id="name1"></h1>
+
+</body>
+<script>
+    function showname() {
+    let name= document.getElementById("yourname").value;
+    document.getElementById("name1").innerHTML=name;
+  
+    }
+</script>
+</html>
