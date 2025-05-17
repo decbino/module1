@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính hình chữ nhật</title>
+</head>
+<body>
+    <input type="number" id="chieudai" placeholder="Chiều dài hình chữ nhật:"><br>
+    <input type="number" id="chieurong" placeholder="Chiều rộng hình chữ nhật:"><br><br>
+    <button onclick="chuvi_dientich()">Tính toán</button>
+
+    <h1 id="resultchuvi"></h1>
+    <h1 id="resultdientich"></h1>
+
+    <script>
+        function chuvi_dientich() {
+            var number1 = Number(document.getElementById("chieudai").value);
+             number2 = Number(document.getElementById("chieurong").value);
+             dientich = number1 * number2;
+             chuvi = 2 * (number1 + number2);
+
+            document.getElementById("resultchuvi").innerHTML = "Chu vi hình chữ nhật là: " + chuvi;
+            document.getElementById("resultdientich").innerHTML = "Diện tích hình chữ nhật là: " + dientich;
+        }
+    </script>
+</body>
+</html>
+
+</html>
