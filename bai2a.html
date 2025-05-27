@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let name = +prompt("ai đấy?");
+    if(name == "admin"){
+        let pass = +prompt("hãy nhập mật khẩu");
+        if(pass =="TheMaster"){
+            document.write("wellcome");
+        }else if(pass == null){
+            document.write("Canceled");
+        }else{
+            document.wirte("wrong password");
+        }
+    }else if(name == null){
+        alert("canceled");
+    }else{
+        alert("i Dont know u");
+    }
+</script>
+</html>
