@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let login = prompt("hãy nhập tên đăng nhập");
+    if(login == "admin"){
+        let pass = prompt("hãy nhập mật khẩu");
+        if(pass == "TheMaster"){
+            alert("welcome");
+        }else if(pass == null){
+            alert("canceled");
+        }else{
+            alert("wrong password");
+        }
+    }
+        else if( login == null){
+            alert("canceled");
+        }else{
+            alert("I dont know you");
+        }
+    
+</script>
+</html>
